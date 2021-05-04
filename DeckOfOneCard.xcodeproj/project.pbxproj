@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D98D8D82641E01100AFCC07 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98D8D72641E01100AFCC07 /* Card.swift */; };
+		0D98D8DB2641E2CE00AFCC07 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98D8DA2641E2CE00AFCC07 /* CardController.swift */; };
+		0D98D8DD2641E5ED00AFCC07 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98D8DC2641E5ED00AFCC07 /* CardError.swift */; };
+		0D98D8DF2641F4A300AFCC07 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D98D8DE2641F4A300AFCC07 /* CardViewController.swift */; };
 		7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A23723AA9BB700D23AFA /* AppDelegate.swift */; };
 		7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */; };
 		7E62A23F23AA9BB700D23AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E62A23D23AA9BB700D23AFA /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D98D8D72641E01100AFCC07 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		0D98D8DA2641E2CE00AFCC07 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		0D98D8DC2641E5ED00AFCC07 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		0D98D8DE2641F4A300AFCC07 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		7E62A23423AA9BB700D23AFA /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E62A23723AA9BB700D23AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +46,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D98D8D12641DFB100AFCC07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D98D8D32641DFD000AFCC07 /* CustomViews */,
+				0D98D8D22641DFB700AFCC07 /* StoryBoards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D98D8D22641DFB700AFCC07 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				7E62A23D23AA9BB700D23AFA /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		0D98D8D32641DFD000AFCC07 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		0D98D8D42641DFD900AFCC07 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D98D8D62641DFE900AFCC07 /* ModelControllers */,
+				0D98D8D52641DFE000AFCC07 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D98D8D52641DFE000AFCC07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D98D8DE2641F4A300AFCC07 /* CardViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0D98D8D62641DFE900AFCC07 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D98D8DA2641E2CE00AFCC07 /* CardController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		0D98D8D92641E2BF00AFCC07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D98D8D72641E01100AFCC07 /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7E62A22B23AA9BB700D23AFA = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +123,9 @@
 		7E62A23623AA9BB700D23AFA /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
-				7E62A23D23AA9BB700D23AFA /* Main.storyboard */,
-				7E62A25523AA9D5300D23AFA /* View Controllers */,
-				7E62A25423AA9D4800D23AFA /* Model Controllers */,
-				7E62A25223AA9D3E00D23AFA /* Models */,
+				0D98D8D92641E2BF00AFCC07 /* Model */,
+				0D98D8D42641DFD900AFCC07 /* Controllers */,
+				0D98D8D12641DFB100AFCC07 /* Views */,
 				7E62A25323AA9D4200D23AFA /* Helpers */,
 				7E62A24B23AA9BBE00D23AFA /* Resources */,
 			);
@@ -80,33 +144,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7E62A25223AA9D3E00D23AFA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		7E62A25323AA9D4200D23AFA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				7E62A25023AA9D3400D23AFA /* UIViewControllerExtension.swift */,
+				0D98D8DC2641E5ED00AFCC07 /* CardError.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		7E62A25423AA9D4800D23AFA /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controllers";
-			sourceTree = "<group>";
-		};
-		7E62A25523AA9D5300D23AFA /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D98D8DB2641E2CE00AFCC07 /* CardController.swift in Sources */,
+				0D98D8DF2641F4A300AFCC07 /* CardViewController.swift in Sources */,
 				7E62A25123AA9D3400D23AFA /* UIViewControllerExtension.swift in Sources */,
+				0D98D8DD2641E5ED00AFCC07 /* CardError.swift in Sources */,
 				7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */,
 				7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */,
+				0D98D8D82641E01100AFCC07 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
